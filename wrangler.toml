@@ -6,8 +6,8 @@ compatibility_date = "2023-05-18"
 # Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
 [[r2_buckets]]
 binding = "MY_BUCKET"
-bucket_name = "shane-bucket"
-preview_bucket_name = "fake-shane"
+bucket_name = "test-bucket"
+preview_bucket_name = "fake-test"
 
 [[rules]]
 type = "Data"

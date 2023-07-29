@@ -1,11 +1,9 @@
-import jacobBlob from "./jacob.png";
+//@ts-ignore
+import jacobBlob from './jacob.png';
 
 export default {
 	async fetch(request: Request, env: Env) {
-
-
-		await env.MY_BUCKET.put("jacob", new File([jacobBlob], "jacob").stream());
-
+		await env.MY_BUCKET.put('jacob', new File([jacobBlob], 'jacob').stream());
 
 		// Retrieve the key "image.png"
 		const object = await env.MY_BUCKET.get('jacob');
